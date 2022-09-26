@@ -29,7 +29,7 @@ $bk = $rows;
 
 <body>
 
-  <h1>Daftar Buku</h1>
+  <h1>Daftar Buku Mahasiswa UNPAS</h1>
 
   <table border="1" cellpading="10" cellspacing="0">
     <tr>
