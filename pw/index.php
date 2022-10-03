@@ -27,11 +27,13 @@ $bk = $rows;
   <title>Buku</title>
 </head>
 
-<body>
+<body style="background-color : #0F3460;">
+  <div class="container"> 
 
   <h1>Daftar Buku Mahasiswa UNPAS</h1>
 
   <table border="1" cellpading="10" cellspacing="0">
+
     <tr>
       <th>nomor</th>
       <th>Judul</th>
@@ -59,5 +61,5 @@ $bk = $rows;
           </figure>
         </td>
       <?php endforeach; ?>
-
+    </div>
 </html>
