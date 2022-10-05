@@ -1,9 +1,19 @@
 <?php
-    include 'db.php';
 
-    if (isset($_GET ['idk'])){
-        $delete = mysqli_query($conn, "DELETE FROM tb_category WHERE category_id = '".$_GET['idk']."' ");
-        echo '<script>window.location="data-kategori.php"</script>';
-    }
+require 'function.php';
 
+$id = $_GET['id'];
+
+if (hapus($id) > 0)
+{
+    echo "<script>
+            alert('Success Delete! ');
+            document.location.href = 'admin.php';
+            </script>";
+} else {
+    echo "<script>
+            alert('Failed Delete!');
+            document.location.href = 'admin.php';
+            </script>";
+}
 ?>
